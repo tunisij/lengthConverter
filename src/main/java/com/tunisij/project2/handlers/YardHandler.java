@@ -7,8 +7,8 @@ public class YardHandler extends ConverterHandler {
 	}
 	
 	@Override
-	public String convert(double kilometers) {
-		return "Yards".equals(units) ? Double.toString(kilometers * 1093.61) : handler.convert(kilometers);
+	public String convert(String kilometers) {
+		return "Yards".equals(units) ? Double.toString(Integer.parseInt(kilometers) * 1093.61) : handler.convert(kilometers);
 	}
 
 }

@@ -17,7 +17,7 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Length Converter</a>
+				<a class="navbar-brand" href="/convert">Length Converter</a>
 			</div>
 		</div>
 	</nav>

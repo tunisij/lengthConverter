@@ -23,7 +23,7 @@ public class ConverterController {
 		mh.setSuccessor(yh);
 		yh.setSuccessor(fh);
 		
-		form.setConvertedValue(mh.convert(form.getKilometers()));
+		form.setConvertedValue(mh.convert(Integer.toString(form.getKilometers())));
 		return new ModelAndView("lengthConverter", "converterForm", form);
 	}
 	

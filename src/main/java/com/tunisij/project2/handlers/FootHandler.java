@@ -7,8 +7,8 @@ public class FootHandler extends ConverterHandler {
 	}
 	
 	@Override
-	public String convert(double kilometers) {
-		return Double.toString(kilometers * 3280.839895);
+	public String convert(String kilometers) {
+		return Double.toString(Integer.parseInt(kilometers) * 3280.839895);
 	}
 
 }

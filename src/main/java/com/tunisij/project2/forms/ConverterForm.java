@@ -2,7 +2,7 @@ package com.tunisij.project2.forms;
 
 public class ConverterForm {
 
-	private int kilometers;
+	private double kilometers;
 	private String convertedValue;
 	private String units;
 	private final String[] dropdown = { "Miles", "Yards", "Feet" };
@@ -11,11 +11,11 @@ public class ConverterForm {
 		return dropdown;
 	}
 
-	public int getKilometers() {
+	public double getKilometers() {
 		return kilometers;
 	}
 
-	public void setKilometers(int kilometers) {
+	public void setKilometers(double kilometers) {
 		this.kilometers = kilometers;
 	}
 

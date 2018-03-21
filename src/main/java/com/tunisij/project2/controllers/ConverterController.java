@@ -28,7 +28,7 @@ public class ConverterController {
 		
 		ConverterHandler handler = new RoundDecorator(new ExpDecorator(new UnitNameDecorator(mh)));
 		
-		form.setConvertedValue(handler.convert(Integer.toString(form.getKilometers())));
+		form.setConvertedValue(handler.convert(Double.toString(form.getKilometers())));
 		return new ModelAndView("lengthConverter", "converterForm", form);
 	}
 	

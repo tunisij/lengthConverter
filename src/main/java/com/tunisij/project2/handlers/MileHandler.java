@@ -8,7 +8,7 @@ public class MileHandler extends ConverterHandler {
 	
 	@Override
 	public String convert(String kilometers) {
-		return "Miles".equals(units) ? Double.toString(Integer.parseInt(kilometers) * 0.621371) : handler.convert(kilometers);
+		return "Miles".equals(units) ? Double.toString(Double.parseDouble(kilometers) * 0.621371) : handler.convert(kilometers);
 	}
 
 }
